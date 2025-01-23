@@ -31,6 +31,10 @@ $sql .= "INSERT INTO Tovar (nazva, cena, prodaz)
  VALUES ('Банани', '15 ', '120 ');";
  $sql .= "INSERT INTO Tovar (nazva, cena, prodaz)  
  VALUES ('Кава', '150 ', '300 ');";
+
+
+
+
 if ($conn->multi_query($sql) === TRUE) {
     echo "New records created successfully";
 } else {
