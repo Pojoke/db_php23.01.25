@@ -1,8 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "dz";
+require "program.php";
 // Створення з'єднання 
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Перевірка з'єднання  
