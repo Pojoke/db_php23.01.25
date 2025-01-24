@@ -9,7 +9,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
 } 
-$sql = "SELECT id,nazva,prodaz,cena FROM Tovar WHERE prodaz > 100 AND cena BETWEEN 10 AND 20";
+$sql = "SELECT * FROM Tovar ORDER BY nazva";
 $result = $conn->query($sql); 
 
 if ($result->num_rows > 0) {
